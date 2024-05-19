@@ -2,6 +2,7 @@
 
 This contains my public Blog like Notes, including "Trip Reports" and such:
 
+* 2024-05-19 [Running Ollama in an AMD Radeon RX 7600 XT on Fedora 40](ml/ollama1.md)
 * 2024-02-20 [Visual Studio Code Tunnel systemd service authorization token refresh](security/vsc-token.md)
 * 2024-02-04 [FOSDEM 2024](conferences/FOSDEM-2024.md)
 * 2024-01-04 [`gpg` hangs](security/gpg-hangs-on-hostname-change.md)
