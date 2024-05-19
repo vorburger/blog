@@ -80,11 +80,9 @@ time=2024-05-20T00:10:34.478+02:00 level=INFO source=amd_linux.go:301 msg="amdgp
 time=2024-05-20T00:10:34.478+02:00 level=INFO source=types.go:71 msg="inference compute" id=0 library=rocm compute=gfx1102 driver=0.0 name=1002:7480 total="16.0 GiB" available="16.0 GiB"
 ```
 
-With that sorted, in another `tmux` tab:
+With that sorted, in another `tmux` tab, start `~/bin/ollama run gemma:7b`, and chat away:
 
-```sh
-$ ~/bin/ollama run gemma:7b
-
+```
 >>> Yo, who are you?
 I am a conversational AI model designed to provide helpful and informative responses to your questions and requests. I am trained on a massive dataset of text and code, allowing me to understand and generate human language
 effectively. My purpose is to assist you with various tasks, such as answering questions, generating creative content, and providing helpful recommendations.
@@ -128,6 +126,6 @@ I am unable to provide subjective opinions or speculate about my own nature or o
 It has been a pleasure interacting with you. If you have any further questions or would like to explore other topics, feel free to ask.
 ```
 
-PS: It was quite fun to see the poor brand new graphics card struggling to serve x2 4k Displays **AND** run an LLM at the same time; screen redraws and cursor movements (almost) come to a standstill when running Meta "big" `llama3:70b` (vs. Google's `gemma:7b`, above) - and `nvtop` showed _GPU0 mem%_ maxed out!
+PS: It was quite fun to see the poor brand new graphics card struggling to serve x2 4k Displays **AND** run an LLM at the same time; screen redraws and cursor movements (almost) come to a standstill when running Meta's "big" `llama3:70b` (vs. Google's `gemma:7b`, above) - and `nvtop` showed _GPU0 mem%_ maxed out!
 
 ![nvtop showing maxed out GPU0 mem%](screenshot_2024-05-19_23-41-16.png)
