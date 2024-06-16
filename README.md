@@ -2,6 +2,7 @@
 
 This contains my public Blog like Notes, including "Trip Reports" and such:
 
+* 2024-06-16 [Plaintext (MD) ToDo with GitJournal on Android](plaintext/gitjournal.md)
 * 2024-05-31 [Pass through a physical disk in Virtual Machine Manager](linux/vmm-disk-passthrough.md)
 * 2024-05-19 [Running Ollama in an AMD Radeon RX 7600 XT on Fedora 40](ml/ollama1.md)
 * 2024-02-20 [Visual Studio Code Tunnel systemd service authorization token refresh](security/vsc-token.md)
