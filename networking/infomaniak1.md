@@ -13,7 +13,7 @@ In the meantime, I run my personal email in an admittedly somewhat weird set-up,
 1. The [DNS NS](https://en.wikipedia.org/wiki/Name_server#Authoritative_name_server) for it is a [Cloud DNS on GCP](https://cloud.google.com/dns).
    (This doesn't really make all that much sense, as it would be much simpler to just use Infomaniak's DNS; other than being "historical", and a tiny little bit cheaper instead of paying them extra for Anycast . But hey, maybe we'll [throw some generative AI](https://www.youtube.com/watch?v=-P-ein58laA) at DNS, too? 😼)
 
-1. The `MX` on that is `mta-gw.infomaniak.ch`. And I've configured that to forward my email to Gmail.
+1. The [`MX`](https://en.wikipedia.org/wiki/MX_record) on that is `mta-gw.infomaniak.ch`. And I've configured that to forward my email to Gmail.
 
 ## Outgoing
 
