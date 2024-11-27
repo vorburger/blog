@@ -2,6 +2,7 @@
 
 This contains my public Blog like Notes, including "Trip Reports" and such:
 
+* 2024-11-27 [Infomaniak Swiss Cloud Provider Technical Support for SMTP problem](networking/infomaniak1.md) #spam #crypto
 * 2024-09-12 [Solid](linked-data/solid1.md)
 * 2024-08-26 [OpenJDK JIRA](java/openjdk-jira.md)
 * 2024-06-16 [Plaintext (MD) ToDo with GitJournal on Android](plaintext/gitjournal.md)
