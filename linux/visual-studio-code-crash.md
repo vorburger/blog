@@ -1,4 +1,4 @@
-# Visual Studio Code Crash
+# Visual Studio Code 'launch-failed' code '159' Crash Fixed
 
 Recently my Visual Studio Code on Fedora Linux 41 Workstation failed to start, saying: _"The window terminated unexpectedly (reason 'launch-failed' code '159')"._
 
