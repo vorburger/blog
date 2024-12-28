@@ -22,4 +22,4 @@ It became more interesting when **it still happened!** Using Spock's 🖖 Vulcan
 
 Taking a (not quite so...) random wild guess, I narrowed it down to being caused by `"workbench.productIconTheme": "adwaita"`! I added that, years ago, [based on this guide](https://github.com/piousdeer/vscode-adwaita#suggested-settings), but it looks like some recent Fedora Upgrade broke this somehow. [Removing that](https://github.com/vorburger/vorburger-dotfiles-bin-etc/commit/1ae84d495c6ebfb86d3e6875fde4dafb0ce10dff) fixed it!
 
-PS: Filed [VSC bug #TBD](https://github.com/microsoft/vscode/issues/237058) just in case VSC maintainers wanted to further debug this.
+PS: Filed [VSC bug #237058](https://github.com/microsoft/vscode/issues/237058) just in case VSC maintainers wanted to further debug this.
