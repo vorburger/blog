@@ -2,6 +2,7 @@
 
 This contains my public Blog like Notes, including "Trip Reports" and such:
 
+* 2025-02-01 [FOSDEM 2025](conferences/FOSDEM-2025.md)
 * 2024-12-29 [Fixed Visual Studio Code 'launch-failed' code '159' Crash](linux/visual-studio-code-crash.md)
 * 2024-12-13 [GitHub.com vs. GitHub.io Pages](networking/github.com-github.io-pages.md)
 * 2024-11-27 [Infomaniak Swiss Cloud Provider Technical Support for SMTP problem](networking/infomaniak1.md) #spam #crypto
