@@ -129,6 +129,16 @@ Redox, the microkernel-based OS written in Rust, explores _userspaceification_ o
 
 ## Sunday 2025-02-02
 
+### Next Generation Internet 2025: where next?
+
+Unclear if NGI EU program will be renewed as-is. Maybe in a different form.
+
+Not a great presentation.
+
+### [We need Disposable Digital Identities for a more secure and resilient digital society](https://fosdem.org/2025/schedule/event/fosdem-2025-6217-we-need-disposable-digital-identities-for-a-more-secure-and-resilient-digital-society/)
+
+Self Sovereign Identity 🆔 with Verifiable Credentials 🪪 is coming to a Wallet near you, EU-wide, and in Switzerland, NEXT YEAR... interesting space? 🤔 
+
 ## Friends
 
 * Kai Kreuzer (openHAB); with Enzo
