@@ -139,8 +139,12 @@ Not a great presentation.
 
 Self Sovereign Identity 🆔 with Verifiable Credentials 🪪 is coming to a Wallet near you, EU-wide, and in Switzerland, NEXT YEAR... interesting space? 🤔 
 
-## Friends
+### NLnet
 
-* Kai Kreuzer (openHAB); with Enzo
-* Dave Neary & Zaheda Borat
-* Mifos booth
+I've listened in to a BoF of NLnet, and was impressed by the energy there.
+
+### Nostr
+
+I've [spent some time at the Nostr booth](https://njump.me/nevent1qqsdweruuevw4ktqngh9hkekhr8c7tj4gtpz798qt458l8x7ddm435qppemhxue69uhkummn9ekx7mp0qgs0l09hq60h4fwkmvffavu70k9f0z2xd5j45cmm4s0tlpshkpt5q3qrqsqqqqqp574jdf) to better understand what they're up to, and from what I've learned so far, quite like what I've heard!
+
+I'm wondering if there's something to be done with a generic RDF Nostr kind, and how this may relate to Solid. Could Nostr relays be Solid Pods?!
