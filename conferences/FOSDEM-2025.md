@@ -141,14 +141,16 @@ Self Sovereign Identity 🆔 with Verifiable Credentials 🪪 is coming to a Wal
 
 ### DevPod
 
-https://devpod.sh had a booth, and a chat with them VS https://www.gitpod.io (they touted their `devcontainer.json` https://containers.dev standard support; although [it seems that GitPod does also support it](https://www.gitpod.io/docs/flex/configuration/devcontainer)). I tried both, but:
+https://devpod.sh had a booth, and a chat with them VS https://www.gitpod.io (they touted their `devcontainer.json` https://containers.dev standard support; although [it seems that GitPod does also support it](https://www.gitpod.io/docs/flex/configuration/devcontainer)). I tried both:
 
 * _GitPod Flex_ (new) is still AWS only, with GCP on waitlist (and personally I don't do AWS, only GCP)
 * DevPod [didn't start for me on Fedora](https://github.com/loft-sh/devpod/issues/1410)
 
-So I'm currently exploring just directly using [JetBrains Gateway](https://www.jetbrains.com/remote-development/gateway/) on a GCP GCE VM (which allows to choose the IntelliJ version, whereas using [Google Cloud Workstations](https://cloud.google.com/workstations) uses an older fixed IJ which [I couldn't upgrade](https://issuetracker.google.com/issues/394350437).
+I've also explored just directly using [JetBrains Gateway](https://www.jetbrains.com/remote-development/gateway/) on a GCP GCE VM (which allows to choose the IntelliJ version), but I got stuck with SSH not working on Gateway (from a Chromebox). But even if that was fixed, manually need to create, start and remember to shutdown the VM, and manually dealing with ephemeral chaging IPs on VM restarts, as required by this approach, is more cumbersome than DevPod, which handles of this.
 
-GitHub Codespaces is the simplest, of course; but do not support IntelliJ, anymore.
+Alternatively, one could use [Google Cloud Workstations](https://cloud.google.com/workstations), but that does not support Dev Containers, so one would need to maintain custom workspace set-up scripts (and ituses an older fixed IJ which [I couldn't upgrade](https://issuetracker.google.com/issues/394350437)).
+
+GitHub Codespaces is the simplest, of course; but does not support IntelliJ, anymore.
 
 ### NLnet
 
