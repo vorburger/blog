@@ -2,6 +2,7 @@
 
 This contains my public Blog like Notes, including "Trip Reports" and such:
 
+* 2025-05-20 [Jules.google is my new best friend](ml/jules1.md)
 * 2025-04-12 [Switching from NetworkManager to systemd-networkd on Fedora Linux 41 Workstation](linux/systemd-networkd.md)
 * 2025-02-01 [FOSDEM 2025](conferences/FOSDEM-2025.md)
 * 2024-12-29 [Fixed Visual Studio Code 'launch-failed' code '159' Crash](linux/visual-studio-code-crash.md)
