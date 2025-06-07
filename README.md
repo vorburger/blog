@@ -2,6 +2,7 @@
 
 This contains my public Blog like Notes, including "Trip Reports" and such:
 
+* 2025-06-07 [Google Agent Development Kit (ADK) for Java with Ollama](ml/adk-ollama.md)
 * 2025-05-25 [Fun with PTY & TTY over socat & websocat](linux/pty-tty.md)
 * 2025-05-20 [Jules.google is my new best friend](ml/jules1.md)
 * 2025-04-12 [Switching from NetworkManager to systemd-networkd on Fedora Linux 41 Workstation](linux/systemd-networkd.md)
