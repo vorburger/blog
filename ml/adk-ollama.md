@@ -80,6 +80,6 @@ Do you want to try something out?
 $
 ```
 
-There is still some work left to "fully integrate this upstream", and perhaps iron out some kinds.
+There is still some work left to "fully integrate this upstream", and perhaps iron out some early teething issues.
 
 Enjoy!
