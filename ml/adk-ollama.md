@@ -25,7 +25,7 @@ Curious to see it in action? Here's how you can try out a simple command-line de
 ```sh
 $ ollama pull gemma3:4b
 $ git clone https://github.com/enola-dev/LearningADK
-$ cd LearningADK
+$ cd LangChain4j
 $ ./run-cli.sh "hi, who are you and what can you do?"
 [INFO] Scanning for projects...
 [INFO]
