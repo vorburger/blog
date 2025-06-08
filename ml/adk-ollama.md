@@ -1,17 +1,26 @@
-# Google Agent Development Kit (ADK) for Java with Ollama
+# Google Agent Development Kit (ADK) for Java with Gemma on Ollama
 
-Guillaume Laforge [is exploring building a LangChain4j LLM Adapter for the Google Agent Development Kit, ADK](https://glaforge.dev/posts/2025/06/05/expanding-adk-java-llm-coverage-with-langchain4j/).
+Good news for Java developers! Google's [🧰 Agent Development Kit](https://google.github.io/adk-docs) (ADK), already popular in the 🐍 Python community, has officially arrived for ☕ Java.
 
-I decided to take it for a spin, and see if I can get this to work e.g. with
-[Gemma](https://deepmind.google/models/gemma/) running on [Ollama](https://ollama.com).
+This opens up exciting possibilities for millions of Java developers and enterprises looking to integrate powerful AI agent capabilities into their existing applications.
 
-We also wanted this to "just work" for other users, so I've done some work to put together
-a few of the missing pieces which aren't merged into the https://github.com/google/adk-java repo just yet
-(we working on it!) to be able to make it available via https://jitpack.io, by currently still pulling
-and building it from a branch on the temporary fork at https://github.com/enola-dev/adk-java
-instead of the origin upstream https://github.com/google/adk-java.
+The initial version of the Java ADK directly supports the Gemini and Claude large language model (LLM) APIs already.
+In the Java ecosystem, [LangChain4j](https://docs.langchain4j.dev) is a popular framework (together with Spring AI)
+which already has many (20+ and more through the OpenAI API) integrations with other LLMs.
 
-The resulting demo is now on https://github.com/enola-dev/LearningADK, and you could try it like this:
+Guillaume Laforge [started a LangChain4j Adapter for the Java ADK](https://glaforge.dev/posts/2025/06/05/expanding-adk-java-llm-coverage-with-langchain4j/).
+
+I decided to take that integration for a spin, and see if I can get this to work e.g. with the
+[Gemma](https://deepmind.google/models/gemma/) model, running it [locally on Ollama](ollama1.md).
+This is cool because it opens the door to many other possible models available on Ollama. And
+decentralized AI with optionality off the ⛅ cloud is important e.g. for more privacy sensitive use cases.
+(Personally I happen to think that 🔮 Gemini is currently the most awesome model - but choice is good!)
+
+To ensure this solution is readily available for other users, I've incorporated some currently unmerged changes
+into a branch on a temporary fork (at https://github.com/enola-dev/adk-java). This setup allows us to distribute the necessary pieces
+via https://jitpack.io, while we work towards merging them into the official https://github.com/google/adk-java repository.
+
+Curious to see it in action? Here's how you can try out a simple command-line demo using the Java ADK with Gemma running locally on Ollama:
 
 ```sh
 $ ollama pull gemma3:4b
