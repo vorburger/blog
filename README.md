@@ -2,6 +2,7 @@
 
 This contains my public Blog like Notes, including "Trip Reports" and such:
 
+* 2025-06-19 [SSH with private keys sealed in TPM](security/ssh-tpm.md)
 * 2025-06-07 [Google Agent Development Kit (ADK) for Java with Gemma on Ollama](ml/adk-ollama.md)
 * 2025-05-25 [Fun with PTY & TTY over socat & websocat](linux/pty-tty.md)
 * 2025-05-20 [Jules.google is my new best friend](ml/jules1.md)
