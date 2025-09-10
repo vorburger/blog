@@ -2,6 +2,7 @@
 
 This contains my public Blog like Notes, including "Trip Reports" and such:
 
+* 2025-09-07 [NixCon 2025](conferences/NixCon-2025.md)
 * 2025-06-19 [SSH with private keys sealed in TPM](security/ssh-tpm.md)
 * 2025-06-07 [Google Agent Development Kit (ADK) for Java with Gemma on Ollama](ml/adk-ollama.md)
 * 2025-05-25 [Fun with PTY & TTY over socat & websocat](linux/pty-tty.md)
