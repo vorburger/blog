@@ -2,7 +2,7 @@
 
 I've continued to dabble with NixOS [since attending NixCon 2025](../../conferences/NixCon-2025.md).
 
-Today I finally got around to learning how to do testing of NixOS configurations; and it's actually pretty cool!!
+Today I finally got around to learning [how to do testing of NixOS configurations](https://github.com/vorburger/LearningLinux/blob/7d6819e4bef64352c34669e0ae2a4b2e4868473a/nix/docs/testing.md#references); and it's actually pretty cool!!
 
 [First install `nix`](https://github.com/vorburger/LearningLinux/blob/7d6819e4bef64352c34669e0ae2a4b2e4868473a/nix/docs/install.md), if you haven't already.
 Then, [as explored in my `LearningLinux` repo here](https://github.com/vorburger/LearningLinux/tree/7d6819e4bef64352c34669e0ae2a4b2e4868473a/nix/os/tests),
