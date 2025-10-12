@@ -2,6 +2,7 @@
 
 This contains my public Blog like Notes, including "Trip Reports" and such:
 
+* 2025-10-12 [NixOS Testing](linux/nix/testing.md)
 * 2025-10-11 [Vorburger.ch AI Git Memory `aifiles`](ml/vorburger-ai-git-memory.md)
 * 2025-09-07 [NixCon 2025](conferences/NixCon-2025.md)
 * 2025-06-19 [SSH with private keys sealed in TPM](security/ssh-tpm.md)
