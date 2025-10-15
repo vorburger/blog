@@ -24,6 +24,6 @@ And [with this change](https://github.com/vorburger/vorburger-dotfiles-bin-etc/c
 my Gemini CLI installation now automatically pulls this information into my AI agents' memory.
 (I'll later do something similar for other AI tools I use, too.)
 
-This new repo is basically the AI memory equivalent of my [Linux `dotfiles`](https://github.com/vorburger/dotfiles)!
+This new repo is basically the AI memory equivalent of my [Linux `dotfiles`](https://github.com/vorburger/vorburger-dotfiles-bin-etc)!
 
 What shall we call such Git repos? How about everyone's `aifiles`? 😃
