@@ -2,6 +2,7 @@
 
 This contains my public Blog like Notes, including "Trip Reports" and such:
 
+* 2026-02-05 [Gemini fixed audio bug](ml/gemini-fixed-audio-bug.md)
 * 2025-10-12 [NixOS Testing](linux/nix/testing.md)
 * 2025-10-11 [Vorburger.ch AI Git Memory `aifiles`](ml/vorburger-ai-git-memory.md)
 * 2025-09-07 [NixCon 2025](conferences/NixCon-2025.md)
