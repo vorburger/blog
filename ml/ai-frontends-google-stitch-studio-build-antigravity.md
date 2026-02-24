@@ -23,7 +23,7 @@ I've then locally used [Google Antigravity](https://antigravity.google) to furth
 
 I have to admit that I was completely blown away by the end-result. This is incredible.
 
-Maybe I should make a YouTube video about this process?
+Maybe I should [make a YouTube video](https://www.youtube.com/user/mvorburger) about this process?
 
 ## PS: Alternatives
 
