@@ -8,6 +8,7 @@ Add <https://github.com/logfellow/logstash-logback-encoder> and put this into yo
     <!-- Use JSON format for scalable logging suitable for Google Cloud Logging -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <!-- logstash-logback-encoder writes timestamps in the default TimeZone of the JVM, but GCP wants UTC -->
             <timeZone>UTC</timeZone>
 
             <!-- Align field names with Google Cloud Structured Logging requirements;
