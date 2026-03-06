@@ -45,3 +45,8 @@ Add <https://github.com/logfellow/logstash-logback-encoder> and put this into yo
     </root>
 </configuration>
 ```
+
+Alternatives:
+* https://github.com/hkupty/penna
+* https://github.com/avaje/avaje-simple-logger
+* https://github.com/savoirtech/slf4j-json-logger
