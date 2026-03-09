@@ -2,6 +2,7 @@
 
 This contains my public Blog like Notes, including "Trip Reports" and such:
 
+* 2026-03-09 [How I am prompting LLMs? Should you say Thank You? And Please?](ml/prompting1.md)
 * 2026-03-06 [`logback.xml` for SLF4j to Google Cloud Logging as JSON](java/logback-cloudlogging.md)
 * 2026-02-24 [From Prompt to Production: AI Vibe Coding Web Frontends by Chaining Google's Stitch, AI Studio, and Antigravity](ml/ai-frontends-google-stitch-studio-build-antigravity.md)
 * 2026-02-05 [Gemini fixed audio bug](ml/gemini-fixed-audio-bug.md)
