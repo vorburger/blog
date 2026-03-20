@@ -31,6 +31,6 @@ This is the process that I landed on which worked for me. I'm aware of other too
 
 * [Lovable.dev](https://lovable.dev/) is often mentioned in this context, but it was more "full stack" than I was looking for, generating a surprisingly huge project with many files - but YMMV, of course.
 
-* [Google Firebase Studio](https://firebase.studio), formerly known as Project IDX, appears to be targeting the Lovable-like "full stack" space. I have not tried Firebase Studio yet - but depending on your needs, perhaps you would like to?
+* [Google Firebase Studio](https://firebase.studio), formerly known as Project IDX, appears to be targeting the Lovable-like "full stack" space. I have not tried Firebase Studio yet - but depending on your needs, perhaps you would like to? As [noted here](https://firebase.blog/posts/2026/03/announcing-ai-studio-integration), Google Firebase Studio will sunset on March 22, 2027 and merge into Google AI Studio.
 
 * [Google Cloud Vertex AI Studio](https://console.cloud.google.com/vertex-ai/studio) is an "Enterprise" UI in the GCP console that seems equivalent to the more "Consumer" oriented Google AI Studio.
