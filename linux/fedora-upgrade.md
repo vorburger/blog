@@ -23,11 +23,6 @@ close Brave, and set up Sync again.
     gpg: selecting card failed: No such device
     gpg: OpenPGP card not available: No such device
 
-`sudo pkill gpg-agent && sudo systemctl restart pcscd` fixes this - but only temporarily, for the current boot.
+This can be fixed with [a ~/.gnupg/scdaemon.conf](https://github.com/vorburger/vorburger-dotfiles-bin-etc/blob/46ae683dac91e1b4c0b0a66fdf2b2adc81848578/dotfiles/.gnupg/scdaemon.conf#L1).
 
-`sudo dnf remove opensc` permanently fixes this, so that I don't have to keep doing it at each boot; [Fedora Bug #1893131](https://bugzilla.redhat.com/show_bug.cgi?id=1893131) has the full background.
-
-_TODO: Alternative, untested: Add [70-u2f.rules](https://github.com/Yubico/libfido2/blob/main/udev/70-u2f.rules) into `/etc/udev/rules.d/`?
-(And futzing around with `~/.gnupg/scdaemon.conf`? Add to [my dotfiles](https://github.com/vorburger/vorburger-dotfiles-bin-etc), if required.)
-Also note that [this support.yubico.com](https://support.yubico.com/hc/en-us/articles/360013714479-Troubleshooting-Issues-with-GPG) article seems
-to suggest adding `reader-port Yubico Yubi` to `~/.gnupg/scdaemon.conf`._
+PS: Earlier versions of this post recommended to do `sudo pkill gpg-agent && sudo systemctl restart pcscd` (manually, or via a `/etc/udev/rules.d/` rule; possibly also a [70-u2f.rules](https://github.com/Yubico/libfido2/blob/main/udev/70-u2f.rules)), or to [use `sudo dnf remove opensc`](https://bugzilla.redhat.com/show_bug.cgi?id=1893131) (but that may break other functionality). These were all wrong workarounds, and the `scdaemon.conf` is the recommended solution.
