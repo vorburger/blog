@@ -1,39 +1,18 @@
-# Terminal Bells: From Noise to Notifications
+# Parallelizing Agentic Coding: Supercharging AI Workflows with Terminal Notifications
 
-I've finally fixed my terminal notification workflow. For a long time, I had terminal bells completely silenced because they were just too "noisy." But I recently realized I was missing out on a very useful feature: being notified when a long-running background task finishes.
+The real power of AI-assisted development isn't just having an agent write code for you; it's the ability to *parallelize* your workflow. When you assign a complex, multi-step refactoring task or a deep codebase investigation to a tool like the Gemini CLI, you shouldn't just sit there watching the terminal output scroll by. You should be switching to another pane to write documentation, review PRs, or tackle another problem entirely while the agent grinds away in the background.
 
-The problem was two-fold:
-1. **Accidental Bells:** Every time I scrolled past the end of a file in `less` (which is used by `git`, `bat`, `rg`, etc.), my terminal would "ring." This was annoying and made me disable bells everywhere.
-2. **Silenced tmux:** Because of the noise, I had `set -g bell-action none` in my `.tmux.conf`.
+But this "fire and forget" workflow introduces a new problem: how do you know when the agent is actually finished and needs your review? Constantly context-switching back to check on it defeats the purpose of parallelizing your work.
 
-I recently changed this in my [dotfiles](https://github.com/vorburger/dotfiles/commit/ed6a1dadbb9ed8172762df648518059c81c6dd71) to make bells actually useful.
+The solution is delightfully retro: the terminal bell (`\a`).
 
-### 1. Silencing the "Noise" (Pagers)
+By configuring the Gemini CLI to trigger a system sound when an agent finishes its execution, you can completely ignore its terminal pane until you hear the chime.
 
-The first step was to tell `less` to be quiet. You can do this with the `-q` (or `--quiet`) flag. This prevents it from ringing the bell for common "errors" like hitting the end of a buffer.
+### Setting up AI Notifications
 
-I added this to my shell environment and tool configurations:
+I recently updated my [dotfiles](https://github.com/vorburger/dotfiles/commit/ed6a1dadbb9ed8172762df648518059c81c6dd71) to make this work seamlessly.
 
-```bash
-export LESS="-R -q"
-```
-
-And for tools that use their own pagers or wrappers:
-- **bat**: Use `--pager "less -RF -q"`
-- **git**: Configure `core.pager` to include `-q` for `delta` or `less`.
-
-### 2. Enabling Bells in tmux
-
-With the accidental bells gone, I could safely re-enable them in `tmux` so they actually reach my terminal emulator:
-
-```tmux
-# .tmux.conf
-set -g bell-action any
-```
-
-### 3. Triggering Notifications for Long-Running Tasks
-
-Now that the plumbing is working, I can use it for actual notifications. For example, in the Gemini CLI, I added hooks to trigger a bell and even play a system sound when an agent finishes its work:
+First, I added lifecycle hooks to my Gemini CLI configuration so it plays a pleasant notification sound when it finishes a task or throws a notification:
 
 ```json
 // .gemini/settings.json
@@ -45,4 +24,31 @@ Now that the plumbing is working, I can use it for actual notifications. For exa
 }
 ```
 
-Now, instead of constantly checking my terminal to see if a background task is done, I get a nice subtle sound (and a visual indicator in my terminal/tmux status bar) only when it's intentional.
+Next, because I heavily use `tmux` to manage my parallelized workspaces, I needed to ensure that bells ringing in background windows would actually reach my terminal emulator. Changing `bell-action` passes the signal through to my host OS:
+
+```tmux
+# .tmux.conf
+set -g bell-action any
+```
+
+Now, I kick off an agent, switch to another window, and keep working. When I hear the "complete" chime, I know my AI pair programmer has finished its task.
+
+---
+
+### Appendix: Taming the Noise (Silencing Pagers)
+
+If you've ever had terminal bells enabled globally, you probably turned them off because they are incredibly annoying. The biggest culprit is usually your pager (`less`), which is used under the hood by `git`, `bat`, `rg`, and others. By default, `less` throws a terminal bell every single time you accidentally scroll past the end of a buffer or hit an invalid key.
+
+If you want your AI notifications to actually mean something, you have to eliminate these "false positives."
+
+You can tell `less` to be quiet by exporting the `-q` (or `--quiet`) flag in your shell environment:
+
+```bash
+export LESS="-R -q"
+```
+
+For tools that wrap or configure their own pagers, you'll need to pass the flag explicitly:
+*   **bat**: Use `--pager "less -RF -q"`
+*   **git**: Configure your `core.pager` (whether it's `delta` or `less`) to include `-q`.
+
+With the pager silenced, the terminal bell transforms from a source of constant frustration into a highly effective, asynchronous notification system for agentic workflows.
