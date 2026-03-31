@@ -1,11 +1,16 @@
 #!/bin/bash
 set -e
 
-# banana - A script to generate AI header images for blog posts using Gemini CLI.
+# banana - A script to generate AI header images for blog posts using Imagen API via curl.
 # Usage: ./banana path/to/post.md
 
 if [ -z "$1" ]; then
     echo "Usage: ./banana <post-path.md>"
+    exit 1
+fi
+
+if [ -z "$GEMINI_API_KEY" ]; then
+    echo "Error: GEMINI_API_KEY environment variable is not set."
     exit 1
 fi
 
@@ -15,9 +20,63 @@ if [ ! -f "$POST_PATH" ]; then
     exit 1
 fi
 
-# Generate the image using Gemini CLI
-IMAGE_PATH="static/images/$(basename "$POST_PATH").png"
-gemini --prompt "generate an image and save it as '$IMAGE_PATH', it's for a header for a blog post: $(cat "$POST_PATH")" --model imagen-4.0-generate-001
+# Ensure the output directory exists
+mkdir -p static/images/
 
-# Update front matter to point to the new image
-# sed -i "s|image:.*|image: \"/images/$(basename "$POST_PATH").png\"|" "$POST_PATH"
+# Construct the image path
+FILE_BASENAME=$(basename "$POST_PATH" .md)
+IMAGE_FILENAME="${FILE_BASENAME}.png"
+IMAGE_PATH="static/images/${IMAGE_FILENAME}"
+# Relative URL for the YAML frontmatter
+IMAGE_URL="/images/${IMAGE_FILENAME}"
+
+# Create a prompt based on the entire blog post content
+POST_CONTENT=$(cat "$POST_PATH")
+PROMPT="A cool, Sci-Fi-ish banner for a blog post. Bright colors, positive atmosphere, futuristic aesthetic, no robots, no text, high detail, cinematic lighting. Based on this blog post content:
+
+$POST_CONTENT"
+
+echo "Generating banner image (16:9, 1408x768) based on the content of $POST_PATH..."
+
+# Call the Imagen API
+# Note: Using the model version provided in your snippet. If it fails, you might need imagen-3.0-generate-001.
+if ! RESPONSE=$(curl -sS --fail-with-body -X POST \
+    "https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict" \
+    -H "x-goog-api-key: $GEMINI_API_KEY" \
+    -H "Content-Type: application/json" \
+    -d "$(jq -n --arg prompt "$PROMPT" '{
+        instances: [
+          {
+            prompt: $prompt
+          }
+        ],
+        parameters: {
+          sampleCount: 1,
+          aspectRatio: "16:9",
+          imageSize: "1K"
+        }
+      }')"); then
+    echo "Error: Imagen API request failed"
+    echo "$RESPONSE"
+    exit 1
+fi
+
+# Extract the base64 image from the first prediction and decode it
+echo "$RESPONSE" | jq -r '.predictions[0].bytesBase64Encoded' | base64 -d > "$IMAGE_PATH"
+
+echo "Success! Image saved to $IMAGE_PATH"
+
+# Update the YAML frontmatter in the markdown file
+if grep -q "^image:" "$POST_PATH"; then
+    # Replace existing image field
+    # Use | as delimiter for sed to handle potential slashes in URL
+    sed -i "s|^image:.*|image: \"$IMAGE_URL\"|" "$POST_PATH"
+    echo "Updated 'image:' field in $POST_PATH"
+else
+    # Insert 'image:' field after the first '---' line
+    # Assumes the first line is the start of frontmatter
+    sed -i "2iimage: \"$IMAGE_URL\"" "$POST_PATH"
+    echo "Added 'image:' field to $POST_PATH"
+fi
+
+./build

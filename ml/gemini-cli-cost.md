@@ -2,7 +2,7 @@
 title: "Calculating Gemini CLI Token Costs for Agentic Vibe Coding"
 date: 2026-03-31
 tags: ["ml"]
-image: "/images/placeholder.png"
+image: "/images/gemini-cli-cost.png"
 ---
 
 # Calculating Gemini CLI Token Costs for Agentic Vibe Coding
