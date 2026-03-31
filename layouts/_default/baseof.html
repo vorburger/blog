@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Locale }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    {{ if not hugo.IsServer }}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3Y6RG14L6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-R3Y6RG14L6');
+    </script>
+    {{ end }}
+    {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+    {{ end -}}
+</head>
+<body>
+    <header>
+        <h1><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
+        <nav>
+            <ul>
+                <li><a href="{{ "/" | relURL }}">Home</a></li>
+                <li><a href="{{ "/posts/" | relURL }}">Posts</a></li>
+                <li><a href="{{ "/tags/" | relURL }}">Tags</a></li>
+                <li><a href="{{ "/index.xml" | relURL }}">RSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+        <p><a href="http://blog3.vorburger.ch">Blog v3</a> &copy; 2001 by <a href="http://www.vorburger.ch">Michael Vorburger.ch</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+    </footer>
+</body>
+</html>

@@ -1,3 +1,10 @@
+---
+title: "FOSDEM 2025"
+date: 2025-02-01
+tags: ["conferences"]
+image: "/images/placeholder.png"
+---
+
 # FOSDEM 2025
 
 https://www.fosdem.org/2025/schedule/

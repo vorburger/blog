@@ -1,3 +1,10 @@
+---
+title: "Linux Kernel Random Number Entropy"
+date: 2022-09-09
+tags: ["linux"]
+image: "/images/placeholder.png"
+---
+
 # Linux Kernel Random Number Entropy
 
 The Linux Kernel uses _"entropy"_ to generate random numbers:

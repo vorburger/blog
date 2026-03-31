@@ -1,3 +1,10 @@
+---
+title: "Running Ollama LLMs in an AMD Radeon RX 7600 XT on Fedora 40"
+date: 2024-05-19
+tags: ["ml"]
+image: "/images/placeholder.png"
+---
+
 # Running Ollama LLMs in an AMD Radeon RX 7600 XT on Fedora 40
 
 [Ollama](https://ollama.com) makes it very easy to get up and running with large language models (LLM).

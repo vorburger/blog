@@ -1,3 +1,10 @@
+---
+title: "Calculating Gemini CLI Token Costs for Agentic Vibe Coding"
+date: 2026-03-31
+tags: ["ml"]
+image: "/images/placeholder.png"
+---
+
 # Calculating Gemini CLI Token Costs for Agentic Vibe Coding
 
 While [parallelizing AI workflows with background agents](../linux/terminal-bells.md) is a massive productivity booster, this "fire and forget" vibe coding introduces a new challenge: keeping track of your LLM API costs. If you want to quickly convert your terminal token usage into actual dollars, I highly recommend using this [Gemini CLI Cost Calculator](https://aish.li/cost/gemini-cli).

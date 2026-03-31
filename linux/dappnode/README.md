@@ -1,3 +1,10 @@
+---
+title: "DAppNode"
+date: 2021-06-18
+tags: ["linux"]
+image: "/images/placeholder.png"
+---
+
 # DAppNode
 
 https://dappnode.io

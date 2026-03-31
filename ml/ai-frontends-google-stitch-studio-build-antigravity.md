@@ -1,3 +1,10 @@
+---
+title: "From Prompt to Production: AI Vibe Coding Web Frontends by Chaining Google's Stitch, AI Studio, and Antigravity"
+date: 2026-02-24
+tags: ["ml"]
+image: "/images/placeholder.png"
+---
+
 # From Prompt to Production: AI Vibe Coding Web Frontends by Chaining Google's Stitch, AI Studio, and Antigravity
 
 I recently sat down to finally try out hands-on for myself just exactly how easy it is in February 2026 to have an AI generate a well designed full-fledged working HTML/CSS/JS front-end UI.

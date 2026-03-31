@@ -1,3 +1,10 @@
+---
+title: "FOSDEM 2024"
+date: 2024-02-04
+tags: ["conferences"]
+image: "/images/placeholder.png"
+---
+
 # FOSDEM 2024
 
 I attended [FOSDEM 2024](https://fosdem.org/2024/) in Bruxelles (Brussels) on Sat/Sun Feb 3/4, 2024.

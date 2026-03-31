@@ -1,3 +1,10 @@
+---
+title: "Visual Studio Code 'launch-failed' code '159' Crash Fixed"
+date: 2024-12-29
+tags: ["linux"]
+image: "/images/placeholder.png"
+---
+
 # Visual Studio Code 'launch-failed' code '159' Crash Fixed
 
 Recently my Visual Studio Code on Fedora Linux 41 Workstation failed to start, saying: _"The window terminated unexpectedly (reason 'launch-failed' code '159')"._

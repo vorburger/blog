@@ -1,3 +1,10 @@
+---
+title: "[Krypton](https://krypt.co)"
+date: 2021-05-02
+tags: ["security"]
+image: "/images/placeholder.png"
+---
+
 # [Krypton](https://krypt.co)
 
 See https://krypt.co and sources on https://github.com/kryptco.

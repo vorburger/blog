@@ -1,0 +1,23 @@
+#!/bin/bash
+set -e
+
+# banana - A script to generate AI header images for blog posts using Gemini CLI.
+# Usage: ./banana path/to/post.md
+
+if [ -z "$1" ]; then
+    echo "Usage: ./banana <post-path.md>"
+    exit 1
+fi
+
+POST_PATH="$1"
+if [ ! -f "$POST_PATH" ]; then
+    echo "Error: File $POST_PATH not found."
+    exit 1
+fi
+
+# Generate the image using Gemini CLI
+IMAGE_PATH="static/images/$(basename "$POST_PATH").png"
+gemini --prompt "generate an image and save it as '$IMAGE_PATH', it's for a header for a blog post: $(cat "$POST_PATH")" --model imagen-4.0-generate-001
+
+# Update front matter to point to the new image
+# sed -i "s|image:.*|image: \"/images/$(basename "$POST_PATH").png\"|" "$POST_PATH"

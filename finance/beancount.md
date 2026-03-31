@@ -1,3 +1,10 @@
+---
+title: "Plain text accounting with Beancount"
+date: 2023-01-13
+tags: ["finance"]
+image: "/images/placeholder.png"
+---
+
 # Plain text accounting with Beancount
 
 [Plain text accounting](https://plaintextaccounting.org) is the idea of managing
@@ -33,4 +40,3 @@ Here is how to have a quick play with it to explore what it can do for you:
     bean-check example.beancount
 
     fava -p 8080 example.beancount
-

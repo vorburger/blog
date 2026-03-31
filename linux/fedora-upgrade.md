@@ -1,3 +1,10 @@
+---
+title: "Fedora Upgrades"
+date: 2022-10-01
+tags: ["linux"]
+image: "/images/placeholder.png"
+---
+
 # Fedora Upgrades
 
 Following [Fedora Docs' _DNF System Upgrade_](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/) works reasonably well.

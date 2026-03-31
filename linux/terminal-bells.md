@@ -1,3 +1,10 @@
+---
+title: "Parallelizing Agentic Coding: Supercharging AI Workflows with Terminal Notifications"
+date: 2026-03-31
+tags: ["linux"]
+image: "/images/placeholder.png"
+---
+
 # Parallelizing Agentic Coding: Supercharging AI Workflows with Terminal Notifications
 
 The real power of AI-assisted development isn't just having an agent write code for you; it's the ability to *parallelize* your workflow. When you assign a complex, multi-step refactoring task or a deep codebase investigation to a tool like the Gemini CLI, you shouldn't just sit there watching the terminal output scroll by. You should be switching to another pane to write documentation, review PRs, or tackle another problem entirely while the agent grinds away in the background.

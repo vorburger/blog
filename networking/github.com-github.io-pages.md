@@ -1,3 +1,10 @@
+---
+title: "GitHub Pages on Custom Domains required `github.io` instead of `github.com` DNS"
+date: 2024-12-13
+tags: ["networking"]
+image: "/images/placeholder.png"
+---
+
 # GitHub Pages on Custom Domains required `github.io` instead of `github.com` DNS
 
 My personal homepage <https://www.vorburger.ch> is hosted on the [GitHub Pages](https://pages.github.com/) Content Delivery Network (CDN).

@@ -1,3 +1,10 @@
+---
+title: "Solid"
+date: 2024-09-12
+tags: ["linked-data"]
+image: "/images/placeholder.png"
+---
+
 # Solid
 
 I had heard about [Solid](https://archive.fosdem.org/2023/schedule/event/sovcloud_from_zero_to_hero_with_solid/) from ⚔️ sir [TBL 🧎](https://www.w3.org/People/Berners-Lee/) a few years ago already, but only today I've actually tried it out; like this:

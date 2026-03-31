@@ -1,3 +1,10 @@
+---
+title: "Vorburger.ch AI Git Memory `aifiles`"
+date: 2025-10-11
+tags: ["ml"]
+image: "/images/placeholder.png"
+---
+
 # Vorburger.ch AI Git Memory `aifiles`
 
 Like everyone else, I am increasingly using AI tools.
