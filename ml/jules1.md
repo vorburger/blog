@@ -1,6 +1,6 @@
 ---
 title: "Jules.google"
-date: 2026-03-31
+date: 2025-05-20
 tags: ["ml"]
 image: "/images/placeholder.png"
 ---

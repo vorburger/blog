@@ -1,6 +1,6 @@
 ---
 title: "DAppNode"
-date: 2021-06-18
+date: 2022-03-13
 tags: ["linux"]
 image: "/images/placeholder.png"
 ---
