@@ -1,5 +1,9 @@
 # Michael Vorburger.ch Blog (v3)
 
+This is the source code for https://blog3.vorburger.ch - you might want to read this there!
+
+---
+
 This contains my public Blog like Notes, including "Trip Reports" and such:
 
 * 2026-03-31 [Calculating Gemini CLI Token Costs for Agentic Vibe Coding](ml/gemini-cli-cost.md)
