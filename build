@@ -3,16 +3,17 @@ set -e
 
 # Build script for Michael Vorburger.ch Blog
 
+HUGO_ARGS="--enableGitInfo --gc --minify"
+
 if command -v hugo >/dev/null 2>&1; then
     echo HUGO_VERSION="$HUGO_VERSION"
     echo "Found hugo in PATH, building..."
     hugo version
-    hugo
+    hugo build $HUGO_ARGS
 elif command -v nix >/dev/null 2>&1; then
     echo "hugo not found in PATH, but nix found. Building with nix..."
-    nix run nixpkgs#hugo --version
     nix run nixpkgs#hugo -- version
-    nix run nixpkgs#hugo
+    nix run nixpkgs#hugo -- build $HUGO_ARGS
 else
     echo "Error: Neither 'hugo' nor 'nix' was found in your PATH." >&2
     echo "Please install Hugo (https://gohugo.io/installation/) or Nix (https://nixos.org/download.html)." >&2
