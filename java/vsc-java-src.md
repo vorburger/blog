@@ -1,3 +1,10 @@
+---
+title: "Java JDK Source Code in Visual Studio Code"
+date: 2023-01-29
+tags: ["java"]
+image: "/images/placeholder.png"
+---
+
 # Java JDK Source Code in Visual Studio Code
 
 I've switched from using Eclipse to Visual Studio Code (VSC) for Java coding,

@@ -1,3 +1,10 @@
+---
+title: "Infomaniak.com Swiss Cloud Provider Technical Support for SMTP problem"
+date: 2024-11-27
+tags: ["networking"]
+image: "/images/placeholder.png"
+---
+
 # Infomaniak.com Swiss Cloud Provider Technical Support for SMTP problem
 
 One fine day, when I am retired, and will have more time at hand to "have fun" than I do these days, I'll switch my personal email to [being fully decentralized self-hosting](https://github.com/vorburger/awesome-decentralized-internet-web3-blockchain-p2p-security-world-cloud).

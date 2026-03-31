@@ -1,3 +1,10 @@
+---
+title: "NixOS Testing"
+date: 2025-10-12
+tags: ["linux"]
+image: "/images/placeholder.png"
+---
+
 # NixOS Testing
 
 I've continued to dabble with NixOS [since attending NixCon 2025](../../conferences/NixCon-2025.md).

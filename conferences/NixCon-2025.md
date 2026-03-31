@@ -1,3 +1,10 @@
+---
+title: "NixCon 2025"
+date: 2025-09-07
+tags: ["conferences"]
+image: "/images/placeholder.png"
+---
+
 # NixCon 2025
 
 I've attended https://2025.nixcon.org in Rapperswil-Jona near Zürich in Switzerland, and here are some thoughts about it, written up on my way home.

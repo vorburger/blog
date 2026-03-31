@@ -1,3 +1,10 @@
+---
+title: "How to launch a CLI tool in a new terminal window"
+date: 2022-09-10
+tags: ["linux"]
+image: "/images/placeholder.png"
+---
+
 # How to launch a CLI tool in a new terminal window
 
 Here is one way to run a CLI process in a new window, make closing

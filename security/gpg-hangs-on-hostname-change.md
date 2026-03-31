@@ -1,3 +1,10 @@
+---
+title: "GPG hangs on hostname change"
+date: 2024-01-04
+tags: ["security"]
+image: "/images/placeholder.png"
+---
+
 # GPG hangs on hostname change
 
 I currently use [GnuPG](https://gnupg.org) with [Yubikeys](https://www.yubico.com), mostly (but not only) for [`pass`](https://www.passwordstore.org).

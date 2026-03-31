@@ -1,3 +1,10 @@
+---
+title: "GitJournal"
+date: 2024-06-16
+tags: ["plaintext"]
+image: "/images/placeholder.png"
+---
+
 # GitJournal
 
 I'm switching my task management from Google Tasks to "[plain text](https://plaintextproject.online)" with the [GitJournal](https://gitjournal.io) Android App.

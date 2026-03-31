@@ -1,0 +1,5 @@
+# Hugo build output
+site/
+
+# Hugo lockfile
+.hugo_build.lock

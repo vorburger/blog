@@ -1,3 +1,10 @@
+---
+title: "Gemini Fixed Audio Bug"
+date: 2026-02-05
+tags: ["ml"]
+image: "/images/placeholder.png"
+---
+
 # Gemini Fixed Audio Bug
 
 I'm experimenting with using the Gemini Live API, and have (obviously) "vibe coded" (parts of) what I'm doing.

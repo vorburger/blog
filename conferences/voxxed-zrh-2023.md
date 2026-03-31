@@ -1,3 +1,10 @@
+---
+title: "Voxxed Days Zürich 2023-03-16"
+date: 2023-03-16
+tags: ["conferences"]
+image: "/images/placeholder.png"
+---
+
 # Voxxed Days Zürich 2023-03-16
 
 Today I attended [Voxxed Days Zürich](https://voxxeddays.com/zurich/).

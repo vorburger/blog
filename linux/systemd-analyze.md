@@ -1,3 +1,10 @@
+---
+title: "Debugging Linux Start-Up Speed Performance Issues"
+date: 2022-09-09
+tags: ["linux"]
+image: "/images/placeholder.png"
+---
+
 # Debugging Linux Start-Up Speed Performance Issues
 
 Today while [LearningLinux](https://github.com/vorburger/LearningLinux) I noticed that

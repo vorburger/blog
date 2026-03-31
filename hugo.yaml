@@ -1,0 +1,47 @@
+publishDir: "site"
+baseURL: "https://blog3.vorburger.ch/"
+relativeURLs: true
+canonifyURLs: false
+languageCode: "en-us"
+title: "Michael Vorburger.ch Blog"
+
+module:
+  mounts:
+    - source: "conferences"
+      target: "content/conferences"
+    - source: "finance"
+      target: "content/finance"
+    - source: "java"
+      target: "content/java"
+    - source: "linked-data"
+      target: "content/linked-data"
+    - source: "linux"
+      target: "content/linux"
+    - source: "ml"
+      target: "content/ml"
+    - source: "networking"
+      target: "content/networking"
+    - source: "plaintext"
+      target: "content/plaintext"
+    - source: "security"
+      target: "content/security"
+    - source: "posts"
+      target: "content/posts"
+    - source: "layouts"
+      target: "layouts"
+    - source: "static"
+      target: "static"
+    - source: "archetypes"
+      target: "archetypes"
+
+taxonomies:
+  tag: "tags"
+
+outputs:
+  home: ["HTML", "RSS"]
+  page: ["HTML"]
+  section: ["HTML", "RSS"]
+  taxonomy: ["HTML"]
+  term: ["HTML", "RSS"]
+
+paginate: 10

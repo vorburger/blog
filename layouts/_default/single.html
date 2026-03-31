@@ -1,0 +1,20 @@
+{{ define "main" }}
+    <article class="post-single">
+        <h1>{{ .Title }}</h1>
+        <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
+        
+        {{ if .Params.image }}
+        <img src="{{ .Params.image | relURL }}" class="post-image" alt="{{ .Title }} image">
+        {{ end }}
+
+        <div class="tag-list">
+            {{ range .Params.tags }}
+            <a href="{{ "/tags/" | urlize | relURL }}" class="tag">{{ . }}</a>
+            {{ end }}
+        </div>
+
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </article>
+{{ end }}

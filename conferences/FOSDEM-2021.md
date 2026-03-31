@@ -1,3 +1,10 @@
+---
+title: "FOSDEM 2021"
+date: 2021-02-01
+tags: ["conferences"]
+image: "/images/placeholder.png"
+---
+
 # FOSDEM 2021
 
 I "attended" (virtually, thanks COVID-19) [FOSDEM 2021](https://fosdem.org/2021/) on Sat/Sun Feb 6/7, 2021.

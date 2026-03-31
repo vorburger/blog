@@ -1,3 +1,10 @@
+---
+title: "Linux Laptop power consumption optimization"
+date: 2023-04-01
+tags: ["linux"]
+image: "/images/placeholder.png"
+---
+
 # Linux Laptop power consumption optimization
 
 Setting up a new laptop today was the opportunity to read up

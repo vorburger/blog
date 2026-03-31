@@ -1,3 +1,10 @@
+---
+title: "SSH with private keys sealed in TPM on Fedora Linux"
+date: 2025-06-19
+tags: ["security"]
+image: "/images/placeholder.png"
+---
+
 # SSH with private keys sealed in TPM on Fedora Linux
 
 Instead of [safely storing SSH private keys on a Yubikey](ed25519-sk.md) (if you don't have one) you might want to keep private keys sealed in TPM.

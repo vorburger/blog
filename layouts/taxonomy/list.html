@@ -1,0 +1,31 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+    <div id="all-tags">
+        {{ if eq .Kind "taxonomy" }}
+            {{ range .Pages.ByTitle }}
+            <div class="tag-group">
+                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                <ul>
+                    {{ range .Pages }}
+                    <li>
+                        {{ .Date.Format "2006-01-02" }} 
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+        {{ else }}
+            <div class="tag-group">
+                <ul>
+                    {{ range .Pages }}
+                    <li>
+                        {{ .Date.Format "2006-01-02" }} 
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        {{ end }}
+    </div>
+{{ end }}

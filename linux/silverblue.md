@@ -1,3 +1,10 @@
+---
+title: "Fedora Silverblue"
+date: 2022-08-16
+tags: ["linux"]
+image: "/images/placeholder.png"
+---
+
 # Fedora Silverblue
 
 See also [remaining ToDo](https://github.com/vorburger/Notes/blob/master/ToDo/LOW-PRIORITY/silverblue.md) (private).

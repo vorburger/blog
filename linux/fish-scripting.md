@@ -1,3 +1,10 @@
+---
+title: 'Fish is a **GREAT** interactive shell, but... not yet suitable for scripting! :-(( '
+date: 2022-09-11
+tags: ["linux"]
+image: "/images/placeholder.png"
+---
+
 # Fish is a **GREAT** interactive shell, but... not yet suitable for scripting! :-((
 
 I *almost* :) [started writing some shell scripts in Fish instead of Bash](https://github.com/vorburger/LearningLinux/compare/fish-scripts),

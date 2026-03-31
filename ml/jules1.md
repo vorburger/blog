@@ -1,3 +1,10 @@
+---
+title: "Jules.google"
+date: 2026-03-31
+tags: ["ml"]
+image: "/images/placeholder.png"
+---
+
 # Jules.google
 
 [jules.google](https://jules.google/) is my new best friend. It's just so very awesome.

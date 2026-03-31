@@ -1,3 +1,10 @@
+---
+title: 'Fun with Pseudo-Terminals (PTY) & TTY ("Teletypewriter") over `socat` & `websocat`'
+date: 2025-05-25
+tags: ["linux"]
+image: "/images/placeholder.png"
+---
+
 # Fun with Pseudo-Terminals (PTY) & TTY ("Teletypewriter") over `socat` & `websocat`
 
 In the context of [Enola.dev #1368](https://github.com/enola-dev/enola/issues/1368),

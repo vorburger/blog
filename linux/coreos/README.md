@@ -1,3 +1,10 @@
+---
+title: "Exploring Fedora CoreOS"
+date: 2021-04-12
+tags: ["linux"]
+image: "/images/placeholder.png"
+---
+
 # Exploring Fedora CoreOS
 
 See https://docs.fedoraproject.org/en-US/fedora-coreos!

@@ -1,3 +1,10 @@
+---
+title: "Google Agent Development Kit (ADK) for Java with Gemma on Ollama"
+date: 2025-06-07
+tags: ["ml"]
+image: "/images/placeholder.png"
+---
+
 # Google Agent Development Kit (ADK) for Java with Gemma on Ollama
 
 Good news for Java developers! Google's [🧰 Agent Development Kit](https://google.github.io/adk-docs) (ADK), already popular in the 🐍 Python community, has officially arrived for ☕ Java.

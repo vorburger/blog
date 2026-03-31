@@ -1,3 +1,10 @@
+---
+title: 'Linux "tainted" local HW clock'
+date: 2023-03-31
+tags: ["linux"]
+image: "/images/placeholder.png"
+---
+
 # Linux "tainted" local HW clock
 
 While I was setting up a new laptop, I noticed that `systemd status` printed `Tainted: local-hwclock`, see:

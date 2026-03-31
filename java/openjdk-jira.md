@@ -1,3 +1,10 @@
+---
+title: "OpenJDK JIRA"
+date: 2024-08-26
+tags: ["java"]
+image: "/images/placeholder.png"
+---
+
 # OpenJDK JIRA
 
 The JIRA instance of the OpenJDK at https://bugs.openjdk.org is "open" in the sense that many of its issues are publicly viewable.

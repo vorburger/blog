@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+# Build script for Michael Vorburger.ch Blog
+
+if command -v hugo >/dev/null 2>&1; then
+    echo "Found hugo in PATH, building..."
+    hugo
+elif command -v nix >/dev/null 2>&1; then
+    echo "hugo not found in PATH, but nix found. Building with nix..."
+    nix run nixpkgs#hugo
+else
+    echo "Error: Neither 'hugo' nor 'nix' was found in your PATH." >&2
+    echo "Please install Hugo (https://gohugo.io/installation/) or Nix (https://nixos.org/download.html)." >&2
+    exit 1
+fi
+
+echo "Build complete. Output is in the 'site/' directory."

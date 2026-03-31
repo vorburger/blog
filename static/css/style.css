@@ -1,0 +1,91 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #333;
+}
+
+header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.post-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #eee;
+}
+
+.post-item h2 {
+    margin-bottom: 0.5rem;
+}
+
+.post-item .date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.post-item .summary {
+    margin: 0.5rem 0;
+}
+
+.tag-list {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.tag {
+    background: #f0f0f0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #666;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+footer {
+    margin-top: 4rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    color: #666;
+    text-align: center;
+}
+
+.year-group, .tag-group {
+    margin-top: 3rem;
+    border-left: 4px solid #eee;
+    padding-left: 1rem;
+}
+
+.year-group h2, .tag-group h2 {
+    color: #999;
+}
