@@ -2,7 +2,7 @@
 title: "Linux Laptop power consumption optimization"
 date: 2023-04-01
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/power.png"
 ---
 
 # Linux Laptop power consumption optimization

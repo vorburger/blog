@@ -2,7 +2,7 @@
 title: "Java JDK Source Code in Visual Studio Code"
 date: 2023-01-29
 tags: ["java"]
-image: "/images/placeholder.png"
+image: "/images/vsc-java-src.png"
 ---
 
 # Java JDK Source Code in Visual Studio Code

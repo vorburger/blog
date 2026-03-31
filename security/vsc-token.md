@@ -2,7 +2,7 @@
 title: "Visual Studio Code Tunnel systemd service authorization token refresh"
 date: 2024-02-20
 tags: ["security"]
-image: "/images/placeholder.png"
+image: "/images/vsc-token.png"
 ---
 
 # Visual Studio Code Tunnel systemd service authorization token refresh

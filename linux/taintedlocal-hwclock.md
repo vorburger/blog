@@ -2,7 +2,7 @@
 title: 'Linux "tainted" local HW clock'
 date: 2023-03-31
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/taintedlocal-hwclock.png"
 ---
 
 # Linux "tainted" local HW clock

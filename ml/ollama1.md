@@ -2,7 +2,7 @@
 title: "Running Ollama LLMs in an AMD Radeon RX 7600 XT on Fedora 40"
 date: 2024-05-19
 tags: ["ml"]
-image: "/images/placeholder.png"
+image: "/images/ollama1.png"
 ---
 
 # Running Ollama LLMs in an AMD Radeon RX 7600 XT on Fedora 40

@@ -2,7 +2,7 @@
 title: "[Krypton](https://krypt.co)"
 date: 2021-05-02
 tags: ["security"]
-image: "/images/placeholder.png"
+image: "/images/krypt.co.png"
 ---
 
 # [Krypton](https://krypt.co)

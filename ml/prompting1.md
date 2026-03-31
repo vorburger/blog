@@ -2,7 +2,7 @@
 title: "How I am prompting LLMs: Should you say Thank You? Please?"
 date: 2026-03-09
 tags: ["ml"]
-image: "/images/placeholder.png"
+image: "/images/prompting1.png"
 ---
 
 # How I am prompting LLMs: Should you say Thank You? Please?

@@ -2,7 +2,7 @@
 title: 'Fish is a **GREAT** interactive shell, but... not yet suitable for scripting! :-(( '
 date: 2022-09-11
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/fish-scripting.png"
 ---
 
 # Fish is a **GREAT** interactive shell, but... not yet suitable for scripting! :-((

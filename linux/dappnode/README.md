@@ -2,7 +2,7 @@
 title: "DAppNode"
 date: 2022-03-13
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/README.png"
 ---
 
 # DAppNode

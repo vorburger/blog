@@ -2,7 +2,7 @@
 title: "From Prompt to Production: AI Vibe Coding Web Frontends by Chaining Google's Stitch, AI Studio, and Antigravity"
 date: 2026-02-24
 tags: ["ml"]
-image: "/images/placeholder.png"
+image: "/images/ai-frontends-google-stitch-studio-build-antigravity.png"
 ---
 
 # From Prompt to Production: AI Vibe Coding Web Frontends by Chaining Google's Stitch, AI Studio, and Antigravity

@@ -2,7 +2,7 @@
 title: "GPG hangs on hostname change"
 date: 2024-01-04
 tags: ["security"]
-image: "/images/placeholder.png"
+image: "/images/gpg-hangs-on-hostname-change.png"
 ---
 
 # GPG hangs on hostname change

@@ -2,7 +2,7 @@
 title: "Fedora Upgrades"
 date: 2022-10-01
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/fedora-upgrade.png"
 ---
 
 # Fedora Upgrades

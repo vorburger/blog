@@ -2,7 +2,7 @@
 title: "FOSDEM 2024"
 date: 2024-02-04
 tags: ["conferences"]
-image: "/images/placeholder.png"
+image: "/images/FOSDEM-2024.png"
 ---
 
 # FOSDEM 2024

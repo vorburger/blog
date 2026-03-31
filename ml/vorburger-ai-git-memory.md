@@ -2,7 +2,7 @@
 title: "Vorburger.ch AI Git Memory `aifiles`"
 date: 2025-10-11
 tags: ["ml"]
-image: "/images/placeholder.png"
+image: "/images/vorburger-ai-git-memory.png"
 ---
 
 # Vorburger.ch AI Git Memory `aifiles`

@@ -2,7 +2,7 @@
 title: "Parallelizing Agentic Coding: Supercharging AI Workflows with Terminal Notifications"
 date: 2026-03-30
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/terminal-bells.png"
 ---
 
 # Parallelizing Agentic Coding: Supercharging AI Workflows with Terminal Notifications

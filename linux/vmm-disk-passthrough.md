@@ -2,7 +2,7 @@
 title: 'Pass through" a physical disk in Virtual Machine Manager'
 date: 2024-05-31
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/vmm-disk-passthrough.png"
 ---
 
 # Pass through" a physical disk in Virtual Machine Manager

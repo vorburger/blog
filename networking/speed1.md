@@ -2,7 +2,7 @@
 title: "The Need for Speed (Part #1)"
 date: 2022-11-27
 tags: ["networking"]
-image: "/images/placeholder.png"
+image: "/images/speed1.png"
 ---
 
 # The Need for Speed (Part #1)

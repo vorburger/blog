@@ -2,7 +2,7 @@
 title: "Exploring Fedora CoreOS"
 date: 2021-04-12
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/README.png"
 ---
 
 # Exploring Fedora CoreOS

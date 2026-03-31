@@ -2,7 +2,7 @@
 title: "Solid"
 date: 2024-09-12
 tags: ["linked-data"]
-image: "/images/placeholder.png"
+image: "/images/solid1.png"
 ---
 
 # Solid

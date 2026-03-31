@@ -2,7 +2,7 @@
 title: "SSH with private keys sealed in TPM on Fedora Linux"
 date: 2025-06-19
 tags: ["security"]
-image: "/images/placeholder.png"
+image: "/images/ssh-tpm.png"
 ---
 
 # SSH with private keys sealed in TPM on Fedora Linux

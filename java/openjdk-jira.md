@@ -2,7 +2,7 @@
 title: "OpenJDK JIRA"
 date: 2024-08-26
 tags: ["java"]
-image: "/images/placeholder.png"
+image: "/images/openjdk-jira.png"
 ---
 
 # OpenJDK JIRA

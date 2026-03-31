@@ -2,7 +2,7 @@
 title: "Linux Kernel Random Number Entropy"
 date: 2022-09-09
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/entropy.png"
 ---
 
 # Linux Kernel Random Number Entropy
