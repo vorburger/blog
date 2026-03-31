@@ -1,5 +1,8 @@
 # ToDo
 
+1. Is http://blog3.vorburger.ch OK now? DNS resolves? HTTP reachable, returns 200, shows this `./site/index.html` ?
+   due:2026-03-31
+
 1. Restructure `/images/` ...
    linux/coreos/README.md and
    linux/dappnode/README.md are both
