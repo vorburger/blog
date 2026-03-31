@@ -1,0 +1,13 @@
+---
+name: blog
+compatibility_date: "2024-04-01"
+
+pages_build_config:
+  build_command: "./build"
+  destination_dir: "site"
+
+vars:
+  HUGO_VERSION: "0.128.0"
+
+  # Set to "true" if you use Hugo's git-based features (e.g. .Lastmod)
+  HUGO_ENABLEGITINFO: "true"
