@@ -2,7 +2,7 @@
 title: "Switching from NetworkManager to systemd-networkd on Fedora Linux 41 Workstation"
 date: 2025-04-12
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/systemd-networkd.png"
 ---
 
 # Switching from NetworkManager to systemd-networkd on Fedora Linux 41 Workstation

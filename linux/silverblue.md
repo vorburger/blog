@@ -2,7 +2,7 @@
 title: "Fedora Silverblue"
 date: 2022-08-16
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/silverblue.png"
 ---
 
 # Fedora Silverblue

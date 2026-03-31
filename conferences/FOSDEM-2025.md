@@ -2,7 +2,7 @@
 title: "FOSDEM 2025"
 date: 2025-02-01
 tags: ["conferences"]
-image: "/images/placeholder.png"
+image: "/images/FOSDEM-2025.png"
 ---
 
 # FOSDEM 2025

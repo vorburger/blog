@@ -2,7 +2,7 @@
 title: "Jules.google"
 date: 2025-05-20
 tags: ["ml"]
-image: "/images/placeholder.png"
+image: "/images/jules1.png"
 ---
 
 # Jules.google

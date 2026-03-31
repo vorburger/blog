@@ -2,7 +2,7 @@
 title: "Gemini Fixed Audio Bug"
 date: 2026-02-05
 tags: ["ml"]
-image: "/images/placeholder.png"
+image: "/images/gemini-fixed-audio-bug.png"
 ---
 
 # Gemini Fixed Audio Bug

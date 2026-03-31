@@ -2,7 +2,7 @@
 title: "NixOS Testing"
 date: 2025-10-12
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/testing.png"
 ---
 
 # NixOS Testing

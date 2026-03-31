@@ -2,7 +2,7 @@
 title: "Google Agent Development Kit (ADK) for Java with Gemma on Ollama"
 date: 2025-06-07
 tags: ["ml"]
-image: "/images/placeholder.png"
+image: "/images/adk-ollama.png"
 ---
 
 # Google Agent Development Kit (ADK) for Java with Gemma on Ollama

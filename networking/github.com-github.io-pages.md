@@ -2,7 +2,7 @@
 title: "GitHub Pages on Custom Domains required `github.io` instead of `github.com` DNS"
 date: 2024-12-13
 tags: ["networking"]
-image: "/images/placeholder.png"
+image: "/images/github.com-github.io-pages.png"
 ---
 
 # GitHub Pages on Custom Domains required `github.io` instead of `github.com` DNS

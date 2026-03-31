@@ -2,7 +2,7 @@
 title: "Visual Studio Code 'launch-failed' code '159' Crash Fixed"
 date: 2024-12-29
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/visual-studio-code-crash.png"
 ---
 
 # Visual Studio Code 'launch-failed' code '159' Crash Fixed

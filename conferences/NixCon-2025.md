@@ -2,7 +2,7 @@
 title: "NixCon 2025"
 date: 2025-09-07
 tags: ["conferences"]
-image: "/images/placeholder.png"
+image: "/images/NixCon-2025.png"
 ---
 
 # NixCon 2025

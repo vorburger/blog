@@ -2,7 +2,7 @@
 title: "Debugging Linux Start-Up Speed Performance Issues"
 date: 2022-09-09
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/systemd-analyze.png"
 ---
 
 # Debugging Linux Start-Up Speed Performance Issues

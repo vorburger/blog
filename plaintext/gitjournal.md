@@ -2,7 +2,7 @@
 title: "GitJournal"
 date: 2024-06-16
 tags: ["plaintext"]
-image: "/images/placeholder.png"
+image: "/images/gitjournal.png"
 ---
 
 # GitJournal

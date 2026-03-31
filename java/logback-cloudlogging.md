@@ -2,7 +2,7 @@
 title: "How to log to Google Cloud Logging as JSON from Java with SLF4j"
 date: 2026-03-06
 tags: ["java"]
-image: "/images/placeholder.png"
+image: "/images/logback-cloudlogging.png"
 ---
 
 # How to log to Google Cloud Logging as JSON from Java with SLF4j

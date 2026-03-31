@@ -2,7 +2,7 @@
 title: "Infomaniak.com Swiss Cloud Provider Technical Support for SMTP problem"
 date: 2024-11-27
 tags: ["networking"]
-image: "/images/placeholder.png"
+image: "/images/infomaniak1.png"
 ---
 
 # Infomaniak.com Swiss Cloud Provider Technical Support for SMTP problem

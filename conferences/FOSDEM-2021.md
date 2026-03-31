@@ -2,7 +2,7 @@
 title: "FOSDEM 2021"
 date: 2021-02-01
 tags: ["conferences"]
-image: "/images/placeholder.png"
+image: "/images/FOSDEM-2021.png"
 ---
 
 # FOSDEM 2021

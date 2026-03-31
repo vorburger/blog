@@ -2,7 +2,7 @@
 title: "How to launch a CLI tool in a new terminal window"
 date: 2022-09-10
 tags: ["linux"]
-image: "/images/placeholder.png"
+image: "/images/gnome-terminal.png"
 ---
 
 # How to launch a CLI tool in a new terminal window

@@ -2,7 +2,7 @@
 title: "Plain text accounting with Beancount"
 date: 2023-01-13
 tags: ["finance"]
-image: "/images/placeholder.png"
+image: "/images/beancount.png"
 ---
 
 # Plain text accounting with Beancount
