@@ -1,0 +1,7 @@
+{{- $href := .Destination -}}
+{{- $isRelativeMdLink := and .Page.File (strings.HasSuffix $href ".md") (not (strings.HasPrefix $href "http")) (not (strings.HasPrefix $href "/")) (not (strings.HasPrefix $href "#")) -}}
+{{- if $isRelativeMdLink -}}
+  {{- $resolved := path.Join .Page.File.Dir $href -}}
+  {{- $href = relref .Page $resolved -}}
+{{- end -}}
+<a href="{{ $href }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .PlainText | safeHTML }}</a>
