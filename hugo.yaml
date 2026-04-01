@@ -44,4 +44,5 @@ outputs:
   taxonomy: ["HTML"]
   term: ["HTML", "RSS"]
 
-paginate: 10
+pagination:
+  pagerSize: 10
