@@ -16,5 +16,10 @@
         <div class="content">
             {{ .Content }}
         </div>
+        {{ if .File }}
+        <div class="edit-link">
+            <a href="https://github.com/vorburger/blog/edit/main/{{ .File.Path }}">Edit on GitHub</a>
+        </div>
+        {{ end }}
     </article>
 {{ end }}
