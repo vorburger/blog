@@ -26,44 +26,5 @@
         {{ end }}
     </div>
 
-    {{ if .Paginator.HasNext }}
-    <div id="infinite-scroll-trigger">
-        <a href="{{ .Paginator.Next.URL }}" id="load-more">Load more...</a>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var loadMore = document.getElementById('load-more');
-            var trigger = document.getElementById('infinite-scroll-trigger');
-            if (!loadMore) return;
-
-            var observer = new IntersectionObserver(function(entries) {
-                if (entries[0].isIntersecting) {
-                    var nextUrl = loadMore.getAttribute('href');
-                    if (nextUrl) {
-                        fetch(nextUrl)
-                            .then(response => response.text())
-                            .then(data => {
-                                var parser = new DOMParser();
-                                var doc = parser.parseFromString(data, 'text/html');
-                                var wall = document.querySelector('.news-wall');
-                                doc.querySelectorAll('.news-tile').forEach(function(tile) {
-                                    wall.insertAdjacentHTML('beforeend', tile.outerHTML);
-                                });
-
-                                var nextLoadMore = doc.getElementById('load-more');
-                                if (nextLoadMore) {
-                                    loadMore.setAttribute('href', nextLoadMore.getAttribute('href'));
-                                } else {
-                                    trigger.remove();
-                                }
-                            });
-                    }
-                }
-            }, { threshold: 1.0 });
-
-            observer.observe(trigger);
-        });
-    </script>
-    {{ end }}
+    {{ partial "infinite-scroll.html" (dict "paginator" .Paginator "itemSelector" ".news-tile") }}
 {{ end }}
