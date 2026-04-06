@@ -1,5 +1,5 @@
 ---
-title: "Voxxed Days Zürich 2023-03-16"
+title: "Voxxed Days Zürich 2023"
 date: 2023-03-16
 tags: ["conferences"]
 image: "/images/voxxed-zrh-2023.png"
