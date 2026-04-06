@@ -158,6 +158,7 @@ footer {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    line-clamp: 3;
 }
 
 .news-tile .tag-list {

@@ -43,8 +43,10 @@
                             .then(data => {
                                 var parser = new DOMParser();
                                 var doc = parser.parseFromString(data, 'text/html');
-                                var newTiles = doc.querySelector('.news-wall').innerHTML;
-                                document.querySelector('.news-wall').insertAdjacentHTML('beforeend', newTiles);
+                                var wall = document.querySelector('.news-wall');
+                                doc.querySelectorAll('.news-tile').forEach(function(tile) {
+                                    wall.insertAdjacentHTML('beforeend', tile.outerHTML);
+                                });
 
                                 var nextLoadMore = doc.getElementById('load-more');
                                 if (nextLoadMore) {
