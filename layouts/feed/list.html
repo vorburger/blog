@@ -12,12 +12,14 @@
                     <img src="{{ .Params.image | relURL }}" class="post-image" alt="{{ .Title }} image">
                     {{ end }}
                     <p>{{ .Summary }}</p>
-                    <a href="{{ .RelPermalink }}" class="read-more">Read more &rarr;</a>
                 </div>
-                <div class="tag-list">
-                    {{ range .Params.tags }}
-                    <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
-                    {{ end }}
+                <div class="post-footer">
+                    <a href="{{ .RelPermalink }}" class="read-more">Read more &rarr;</a>
+                    <div class="tag-list">
+                        {{ range .Params.tags }}
+                        <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+                        {{ end }}
+                    </div>
                 </div>
             </article>
             {{ end }}

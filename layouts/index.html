@@ -14,10 +14,13 @@
                     <p class="tile-summary">{{ .Summary | plainify | truncate 200 "…" | safeHTML }}</p>
                 </div>
             </a>
-            <div class="tag-list">
-                {{ range .Params.tags }}
-                <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
-                {{ end }}
+            <div class="tile-footer">
+                <a href="{{ .RelPermalink }}" class="read-more">Read more &rarr;</a>
+                <div class="tag-list">
+                    {{ range .Params.tags }}
+                    <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+                    {{ end }}
+                </div>
             </div>
         </article>
         {{ end }}

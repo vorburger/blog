@@ -100,7 +100,6 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 1.5rem;
     margin-top: 1rem;
-    align-items: start;
 }
 
 .news-tile {
@@ -119,7 +118,9 @@ footer {
 .tile-link {
     text-decoration: none;
     color: inherit;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .tile-image {
@@ -127,6 +128,7 @@ footer {
     height: 160px;
     object-fit: cover;
     display: block;
+    flex-shrink: 0;
 }
 
 .tile-image-placeholder {
@@ -135,12 +137,17 @@ footer {
 
 .tile-body {
     padding: 0.75rem;
+    flex: 1;
 }
 
 .tile-body h2 {
     font-size: 1rem;
     margin: 0 0 0.25rem;
     line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .tile-body .date {
@@ -158,9 +165,32 @@ footer {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    line-clamp: 3;
 }
 
-.news-tile .tag-list {
-    padding: 0 0.75rem 0.75rem;
+.tile-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    padding: 0.5rem 0.75rem 0.75rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+.tile-footer .tag-list {
+    margin-top: 0;
+}
+
+/* Feed footer: read-more + tags on same row */
+.post-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.post-footer .tag-list {
+    margin-top: 0;
 }
