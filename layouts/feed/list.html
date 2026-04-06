@@ -36,29 +36,47 @@
         document.addEventListener("DOMContentLoaded", function() {
             var loadMore = document.getElementById('load-more');
             var trigger = document.getElementById('infinite-scroll-trigger');
+            var isLoading = false;
             if (!loadMore) return;
 
             var observer = new IntersectionObserver(function(entries) {
-                if (entries[0].isIntersecting) {
-                    var nextUrl = loadMore.getAttribute('href');
-                    if (nextUrl) {
-                        fetch(nextUrl)
-                            .then(response => response.text())
-                            .then(data => {
-                                var parser = new DOMParser();
-                                var doc = parser.parseFromString(data, 'text/html');
-                                var newPosts = doc.getElementById('post-list').innerHTML;
-                                document.getElementById('post-list').insertAdjacentHTML('beforeend', newPosts);
+                if (!entries[0].isIntersecting || isLoading) return;
 
-                                var nextLoadMore = doc.getElementById('load-more');
-                                if (nextLoadMore) {
-                                    loadMore.setAttribute('href', nextLoadMore.getAttribute('href'));
-                                } else {
-                                    trigger.remove();
-                                }
-                            });
-                    }
-                }
+                var nextUrl = loadMore.getAttribute('href');
+                if (!nextUrl) return;
+
+                isLoading = true;
+                observer.unobserve(trigger);
+
+                fetch(nextUrl)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Failed to load more posts: ' + response.status);
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        var parser = new DOMParser();
+                        var doc = parser.parseFromString(data, 'text/html');
+                        var newPosts = doc.getElementById('post-list').innerHTML;
+                        document.getElementById('post-list').insertAdjacentHTML('beforeend', newPosts);
+
+                        var nextLoadMore = doc.getElementById('load-more');
+                        if (nextLoadMore) {
+                            loadMore.setAttribute('href', nextLoadMore.getAttribute('href'));
+                        } else {
+                            trigger.remove();
+                        }
+                    })
+                    .catch(error => {
+                        console.error(error);
+                    })
+                    .then(() => {
+                        isLoading = false;
+                        if (document.body.contains(trigger) && loadMore.getAttribute('href')) {
+                            observer.observe(trigger);
+                        }
+                    });
             }, { threshold: 1.0 });
 
             observer.observe(trigger);
