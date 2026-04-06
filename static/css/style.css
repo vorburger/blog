@@ -84,6 +84,54 @@ footer {
     text-align: center;
 }
 
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    font-size: 1.5rem;
+}
+
+.post-nav-prev {
+    flex: 1;
+    text-align: left;
+}
+
+.post-nav-edit {
+    flex: 1;
+    text-align: center;
+}
+
+.post-nav-next {
+    flex: 1;
+    text-align: right;
+}
+
+.post-nav-prev a,
+.post-nav-next a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.post-nav-next a {
+    justify-content: flex-end;
+}
+
+.post-nav-arrow {
+    flex-shrink: 0;
+    align-self: center;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.post-nav-title {
+    display: inline-block;
+}
+
 .year-group, .tag-group {
     margin-top: 3rem;
     border-left: 4px solid #eee;
