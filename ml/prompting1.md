@@ -20,7 +20,7 @@ Personally I'm currently typically prompting LLMs like this:
 1. I don't send any follow-up prompt when the task at hand is completed to my satisfaction
 1. I on (pretty rare) occasions still can't quite avoid an "oh wow, you're awesome" 😀
 
-Sending a "Thank You" to an LLM as the last prompt to end a conversation does not like a good idea energy wise.
+Sending a "Thank You" to an LLM as the last prompt to end a conversation does not seem like a good idea energy wise.
 
 But I'm not sold on the energy impact of using _"Please"_ **within** an initial or otherwise required follow-up prompt.
 That 1 additional token is unlikely going to make a measurable difference (even at scale), IMHO.

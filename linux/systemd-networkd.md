@@ -68,7 +68,7 @@ networkctl
 IDX LINK       TYPE     OPERATIONAL SETUP
   1 lo         loopback carrier     unmanaged
   2 enp23s0    ether    no-carrier  unmanaged
-  3 eno1       ether    routable    configurured
+  3 eno1       ether    routable    configured
 
 networkctl status eno1
 

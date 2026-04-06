@@ -116,7 +116,7 @@ Why is `pacman-init` THAT (42s!) slow?
     Sep 09 21:17:26 archlinux pacman-key[694]: gpg: next trustdb check due at 2022-11-16
     Sep 09 21:17:26 archlinux systemd[1]: Finished Initializes Pacman keyring.
 
-Note how it apparently took it 31s to _disable 52 revoked keys in keyring_". That seems like a long time?
+Note how it apparently took 31s to _disable 52 revoked keys in keyring_. That seems like a long time?
 
 Note how the earlier `systemd-analyze blame` also mentioned `reflector-init.service` taking 29s... it also blocks `sshd`:
 

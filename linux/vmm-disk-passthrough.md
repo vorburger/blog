@@ -1,11 +1,11 @@
 ---
-title: 'Pass through" a physical disk in Virtual Machine Manager'
+title: '"Pass through" a physical disk in Virtual Machine Manager'
 date: 2024-05-31
 tags: ["linux"]
 image: "/images/vmm-disk-passthrough.png"
 ---
 
-# Pass through" a physical disk in Virtual Machine Manager
+# "Pass through" a physical disk in Virtual Machine Manager
 
 Here is how to "pass through" an actual physical disk from a Linux (workstation) host into a (Linux) virtual machine, using the [Virtual Machine Manager](https://virt-manager.org/) (VMM) UI with click-click.
 
