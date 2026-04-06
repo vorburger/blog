@@ -13,7 +13,7 @@
         </div>
     </div>
     {{ $currentPage := . }}
-    {{ $allTerms := .Parent.Pages }}
+    {{ $allTerms := .Parent.Pages.ByTitle }}
     {{ $prevTerm := false }}
     {{ $nextTerm := false }}
     {{ range $i, $term := $allTerms }}
