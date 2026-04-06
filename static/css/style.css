@@ -87,7 +87,7 @@ footer {
     margin-top: 2rem;
     padding-top: 1rem;
     border-top: 1px solid #eee;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .post-nav-prev {
@@ -120,7 +120,7 @@ footer {
 .post-nav-arrow {
     flex-shrink: 0;
     align-self: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1;
 }
 
