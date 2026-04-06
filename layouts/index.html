@@ -11,7 +11,7 @@
                 <div class="tile-body">
                     <h2>{{ .Title }}</h2>
                     <div class="date">{{ .Date.Format "Jan 2, 2006" }}</div>
-                    <p class="tile-summary">{{ .Summary | plainify | truncate 200 "…" | safeHTML }}</p>
+                    <p class="tile-summary">{{ .Summary | plainify | truncate 200 "…" }}</p>
                 </div>
             </a>
             <div class="tile-footer">
