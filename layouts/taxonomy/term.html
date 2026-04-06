@@ -13,7 +13,7 @@
         </div>
     </div>
     {{ $currentPage := . }}
-    {{ $allTerms := where .Site.Pages "Kind" "term" | sort "Title" }}
+    {{ $allTerms := .Parent.Pages }}
     {{ $prevTerm := false }}
     {{ $nextTerm := false }}
     {{ range $i, $term := $allTerms }}
