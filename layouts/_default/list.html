@@ -13,7 +13,7 @@
                 </div>
                 <div class="tag-list">
                     {{ range .Params.tags }}
-                    <a href="{{ "/tags/" | urlize | relURL }}" class="tag">{{ . }}</a>
+                    <a href="{{ "/tags/" | relURL }}#{{ . | urlize }}" class="tag" aria-label="Jump to {{ . }} tag">#{{ . }}</a>
                     {{ end }}
                 </div>
             </article>

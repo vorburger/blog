@@ -9,12 +9,12 @@
 
         <div class="tag-list">
             {{ range .Params.tags }}
-            <a href="{{ "/tags/" | urlize | relURL }}" class="tag">{{ . }}</a>
+            <a href="{{ "/tags/" | relURL }}#{{ . | urlize }}" class="tag" aria-label="View {{ . }} tag section">#{{ . }}</a>
             {{ end }}
         </div>
 
         <div class="content">
-            {{ .Content }}
+            {{ .Content | replaceRE `(?s)^\s*<h1[^>]*>.*?</h1>\s*` "" | safeHTML }}
         </div>
         <div class="post-nav">
             <div class="post-nav-prev">

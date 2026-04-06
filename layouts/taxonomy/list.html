@@ -3,7 +3,7 @@
     <div id="all-tags">
         {{ if eq .Kind "taxonomy" }}
             {{ range .Pages.ByTitle }}
-            <div class="tag-group">
+            <div class="tag-group" id="{{ .Title | urlize }}">
                 <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
                 <ul>
                     {{ range .Pages }}
