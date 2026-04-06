@@ -12,15 +12,29 @@
             </ul>
         </div>
     </div>
+    {{ $currentPage := . }}
+    {{ $allTerms := where .Site.Pages "Kind" "term" | sort "Title" }}
+    {{ $prevTerm := false }}
+    {{ $nextTerm := false }}
+    {{ range $i, $term := $allTerms }}
+        {{ if eq $term.RelPermalink $currentPage.RelPermalink }}
+            {{ if gt $i 0 }}
+                {{ $prevTerm = index $allTerms (sub $i 1) }}
+            {{ end }}
+            {{ if lt $i (sub (len $allTerms) 1) }}
+                {{ $nextTerm = index $allTerms (add $i 1) }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
     <div class="post-nav">
         <div class="post-nav-prev">
-            {{ with .Prev }}
+            {{ with $prevTerm }}
             <a href="{{ .RelPermalink }}"><span class="post-nav-arrow">⬅️</span><span class="post-nav-title">{{ .Title }}</span></a>
             {{ end }}
         </div>
         <div class="post-nav-edit"></div>
         <div class="post-nav-next">
-            {{ with .Next }}
+            {{ with $nextTerm }}
             <a href="{{ .RelPermalink }}"><span class="post-nav-title">{{ .Title }}</span><span class="post-nav-arrow">➡️</span></a>
             {{ end }}
         </div>
