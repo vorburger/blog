@@ -1,11 +1,11 @@
 ---
-title: "[Krypton](https://krypt.co)"
+title: "Krypt.co made two-factor easy & secure"
 date: 2021-05-02
 tags: ["security"]
 image: "/images/krypt.co.png"
 ---
 
-# [Krypton](https://krypt.co)
+# [Krypton](https://krypt.co) made two-factor easy & secure
 
 See https://krypt.co and sources on https://github.com/kryptco.
 
