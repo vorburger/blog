@@ -27,6 +27,8 @@ module:
       target: "content/security"
     - source: "posts"
       target: "content/posts"
+    - source: "feed"
+      target: "content/feed"
     - source: "layouts"
       target: "layouts"
     - source: "static"
