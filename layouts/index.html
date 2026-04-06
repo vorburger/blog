@@ -1,66 +1,30 @@
 {{ define "main" }}
-    <div id="post-list">
-        {{ range (.Paginate (where .Site.RegularPages "Section" "in" (slice "conferences" "finance" "java" "linked-data" "linux" "ml" "networking" "plaintext" "security")).ByDate.Reverse).Pages.GroupByDate "2006" }}
-        <div class="year-group">
-            <h2>{{ .Key }}</h2>
-            {{ range .Pages }}
-            <article class="post-item">
-                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
-                <div class="summary">
-                    {{ if .Params.image }}
-                    <img src="{{ .Params.image | relURL }}" class="post-image" alt="{{ .Title }} image">
-                    {{ end }}
-                    <p>{{ .Summary }}</p>
-                    <a href="{{ .RelPermalink }}" class="read-more">Read more &rarr;</a>
+    <div class="news-wall" id="post-list">
+        {{ range (.Paginate (where .Site.RegularPages "Section" "in" (slice "conferences" "finance" "java" "linked-data" "linux" "ml" "networking" "plaintext" "security")).ByDate.Reverse).Pages }}
+        <article class="news-tile">
+            <a href="{{ .RelPermalink }}" class="tile-link">
+                {{ if .Params.image }}
+                <img src="{{ .Params.image | relURL }}" class="tile-image" alt="{{ .Title }}">
+                {{ else }}
+                <div class="tile-image tile-image-placeholder"></div>
+                {{ end }}
+                <div class="tile-body">
+                    <h2>{{ .Title }}</h2>
+                    <div class="date">{{ .Date.Format "Jan 2, 2006" }}</div>
+                    <p class="tile-summary">{{ .Summary | plainify | truncate 200 "…" }}</p>
                 </div>
+            </a>
+            <div class="tile-footer">
+                <a href="{{ .RelPermalink }}" class="read-more">Read more &rarr;</a>
                 <div class="tag-list">
                     {{ range .Params.tags }}
                     <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
                     {{ end }}
                 </div>
-            </article>
-            {{ end }}
-        </div>
+            </div>
+        </article>
         {{ end }}
     </div>
 
-    {{ if .Paginator.HasNext }}
-    <div id="infinite-scroll-trigger">
-        <a href="{{ .Paginator.Next.URL }}" id="load-more">Load more...</a>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var loadMore = document.getElementById('load-more');
-            var trigger = document.getElementById('infinite-scroll-trigger');
-            if (!loadMore) return;
-
-            var observer = new IntersectionObserver(function(entries) {
-                if (entries[0].isIntersecting) {
-                    var nextUrl = loadMore.getAttribute('href');
-                    if (nextUrl) {
-                        fetch(nextUrl)
-                            .then(response => response.text())
-                            .then(data => {
-                                var parser = new DOMParser();
-                                var doc = parser.parseFromString(data, 'text/html');
-                                var newPosts = doc.getElementById('post-list').innerHTML;
-                                document.getElementById('post-list').insertAdjacentHTML('beforeend', newPosts);
-                                
-                                var nextLoadMore = doc.getElementById('load-more');
-                                if (nextLoadMore) {
-                                    loadMore.setAttribute('href', nextLoadMore.getAttribute('href'));
-                                } else {
-                                    trigger.remove();
-                                }
-                            });
-                    }
-                }
-            }, { threshold: 1.0 });
-
-            observer.observe(trigger);
-        });
-    </script>
-    {{ end }}
+    {{ partial "infinite-scroll.html" (dict "paginator" .Paginator "itemSelector" ".news-tile") }}
 {{ end }}

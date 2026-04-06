@@ -19,12 +19,13 @@
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
     {{ end -}}
 </head>
-<body>
+<body{{ if .IsHome }} class="home"{{ end }}>
     <header>
         <h1><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
         <nav>
             <ul>
                 <li><a href="{{ "/" | relURL }}">Home</a></li>
+                <li><a href="{{ "/feed/" | relURL }}">Feed</a></li>
                 <li><a href="{{ "/posts/" | relURL }}">Posts</a></li>
                 <li><a href="{{ "/tags/" | relURL }}">Tags</a></li>
                 <li><a href="{{ "/index.xml" | relURL }}">RSS</a></li>
