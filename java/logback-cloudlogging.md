@@ -5,7 +5,7 @@ tags: ["java"]
 image: "/images/logback-cloudlogging.png"
 ---
 
-# How to log to Google Cloud Logging as JSON from Java with SLF4j
+# How to log to Google Cloud (GCP) Logging as JSON from Java with SLF4j
 
 Add <https://github.com/logfellow/logstash-logback-encoder> and put this into your `logback.xml`:
 
@@ -53,7 +53,10 @@ Add <https://github.com/logfellow/logstash-logback-encoder> and put this into yo
 </configuration>
 ```
 
-Alternatives:
+--- 
+
+PS: Alternative SLF4j JSON logging libraries (which out of the box all don't emit exactly the right format for GCP CL, as the above will):
+
 * https://github.com/hkupty/penna
 * https://github.com/avaje/avaje-simple-logger
 * https://github.com/savoirtech/slf4j-json-logger
