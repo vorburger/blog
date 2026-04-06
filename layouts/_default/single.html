@@ -14,7 +14,7 @@
         </div>
 
         <div class="content">
-            {{ .Content | replaceRE `(?s)<h1[^>]*>.*?</h1>\s*` "" | safeHTML }}
+            {{ .Content | replaceRE `(?s)^\s*<h1[^>]*>.*?</h1>\s*` "" | safeHTML }}
         </div>
         {{ if .File }}
         <div class="edit-link">
