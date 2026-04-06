@@ -9,7 +9,7 @@ image: "/images/gnome-terminal.png"
 
 Here is one way to run a CLI process in a new window, make closing
 that window kill that process, yet wait for the user when said process
-exits, e.g. not to loose some start-up error message:
+exits, e.g. not to lose some start-up error message:
 
 ```bash
 gnome-terminal -- bash -c 'ls / ; read -p "Press Enter to close..."'
