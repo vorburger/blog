@@ -3,7 +3,7 @@ baseURL: "https://blog3.vorburger.ch/"
 relativeURLs: true
 canonifyURLs: false
 languageCode: "en-us"
-title: "Michael Vorburger.ch Blog"
+title: "Michael Vorburger.ch Blog (v3)"
 
 module:
   mounts:
