@@ -80,7 +80,31 @@ footer {
     text-align: center;
 }
 
-.year-group, .tag-group {
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.post-nav-prev {
+    flex: 1;
+    text-align: left;
+}
+
+.post-nav-edit {
+    flex: 1;
+    text-align: center;
+}
+
+.post-nav-next {
+    flex: 1;
+    text-align: right;
+}
+
+
     margin-top: 3rem;
     border-left: 4px solid #eee;
     padding-left: 1rem;

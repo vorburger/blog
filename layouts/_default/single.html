@@ -16,10 +16,22 @@
         <div class="content">
             {{ .Content }}
         </div>
-        {{ if .File }}
-        <div class="edit-link">
-            <a href="https://github.com/vorburger/blog/edit/main/{{ .File.Path }}">Edit on GitHub</a>
+        <div class="post-nav">
+            <div class="post-nav-prev">
+                {{ with .Prev }}
+                <a href="{{ .RelPermalink }}">⬅️ {{ .Title }}</a>
+                {{ end }}
+            </div>
+            <div class="post-nav-edit">
+                {{ if .File }}
+                <a href="https://github.com/vorburger/blog/edit/main/{{ .File.Path }}">Edit on GitHub</a>
+                {{ end }}
+            </div>
+            <div class="post-nav-next">
+                {{ with .Next }}
+                <a href="{{ .RelPermalink }}">{{ .Title }} ➡️</a>
+                {{ end }}
+            </div>
         </div>
-        {{ end }}
     </article>
 {{ end }}
