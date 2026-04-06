@@ -83,10 +83,11 @@ footer {
 .post-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 2rem;
     padding-top: 1rem;
     border-top: 1px solid #eee;
+    font-size: 1.2rem;
 }
 
 .post-nav-prev {
@@ -104,7 +105,30 @@ footer {
     text-align: right;
 }
 
+.post-nav-prev a,
+.post-nav-next a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
 
+.post-nav-next a {
+    justify-content: flex-end;
+}
+
+.post-nav-arrow {
+    flex-shrink: 0;
+    align-self: center;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.post-nav-title {
+    display: inline-block;
+}
+
+.year-group, .tag-group {
     margin-top: 3rem;
     border-left: 4px solid #eee;
     padding-left: 1rem;

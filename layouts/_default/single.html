@@ -19,7 +19,7 @@
         <div class="post-nav">
             <div class="post-nav-prev">
                 {{ with .Prev }}
-                <a href="{{ .RelPermalink }}">⬅️ {{ .Title }}</a>
+                <a href="{{ .RelPermalink }}"><span class="post-nav-arrow">⬅️</span><span class="post-nav-title">{{ .Title }}</span></a>
                 {{ end }}
             </div>
             <div class="post-nav-edit">
@@ -29,7 +29,7 @@
             </div>
             <div class="post-nav-next">
                 {{ with .Next }}
-                <a href="{{ .RelPermalink }}">{{ .Title }} ➡️</a>
+                <a href="{{ .RelPermalink }}"><span class="post-nav-title">{{ .Title }}</span><span class="post-nav-arrow">➡️</span></a>
                 {{ end }}
             </div>
         </div>
