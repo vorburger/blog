@@ -1,25 +1,27 @@
 {{ define "main" }}
-    <div class="news-wall" id="post-list">
-        {{ range (.Paginate (where .Site.RegularPages "Section" "in" (slice "conferences" "finance" "java" "linked-data" "linux" "ml" "networking" "plaintext" "security")).ByDate.Reverse).Pages }}
-        <article class="news-tile">
-            <a href="{{ .RelPermalink }}" class="tile-link">
-                {{ if .Params.image }}
-                <img src="{{ .Params.image | relURL }}" class="tile-image" alt="{{ .Title }}">
-                {{ else }}
-                <div class="tile-image tile-image-placeholder"></div>
-                {{ end }}
-                <div class="tile-body">
-                    <h2>{{ .Title }}</h2>
-                    <div class="date">{{ .Date.Format "Jan 2, 2006" }}</div>
-                    <p class="tile-summary">{{ .Summary }}</p>
+    <div id="post-list">
+        {{ range (.Paginate (where .Site.RegularPages "Section" "in" (slice "conferences" "finance" "java" "linked-data" "linux" "ml" "networking" "plaintext" "security")).ByDate.Reverse).Pages.GroupByDate "2006" }}
+        <div class="year-group">
+            <h2>{{ .Key }}</h2>
+            {{ range .Pages }}
+            <article class="post-item">
+                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
+                <div class="summary">
+                    {{ if .Params.image }}
+                    <img src="{{ .Params.image | relURL }}" class="post-image" alt="{{ .Title }} image">
+                    {{ end }}
+                    <p>{{ .Summary }}</p>
+                    <a href="{{ .RelPermalink }}" class="read-more">Read more &rarr;</a>
                 </div>
-            </a>
-            <div class="tag-list">
-                {{ range .Params.tags }}
-                <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
-                {{ end }}
-            </div>
-        </article>
+                <div class="tag-list">
+                    {{ range .Params.tags }}
+                    <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+                    {{ end }}
+                </div>
+            </article>
+            {{ end }}
+        </div>
         {{ end }}
     </div>
 
@@ -43,8 +45,8 @@
                             .then(data => {
                                 var parser = new DOMParser();
                                 var doc = parser.parseFromString(data, 'text/html');
-                                var newTiles = doc.querySelector('.news-wall').innerHTML;
-                                document.querySelector('.news-wall').insertAdjacentHTML('beforeend', newTiles);
+                                var newPosts = doc.getElementById('post-list').innerHTML;
+                                document.getElementById('post-list').insertAdjacentHTML('beforeend', newPosts);
 
                                 var nextLoadMore = doc.getElementById('load-more');
                                 if (nextLoadMore) {

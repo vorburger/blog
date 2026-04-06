@@ -7,6 +7,10 @@ body {
     color: #333;
 }
 
+body.home {
+    max-width: 1200px;
+}
+
 header {
     margin-bottom: 2rem;
     border-bottom: 1px solid #eee;
@@ -88,4 +92,74 @@ footer {
 
 .year-group h2, .tag-group h2 {
     color: #999;
+}
+
+/* News Wall (Home Page) */
+.news-wall {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.news-tile {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-tile:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tile-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    flex: 1;
+}
+
+.tile-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.tile-image-placeholder {
+    background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+}
+
+.tile-body {
+    padding: 0.75rem;
+}
+
+.tile-body h2 {
+    font-size: 1rem;
+    margin: 0 0 0.25rem;
+    line-height: 1.3;
+}
+
+.tile-body .date {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+
+.tile-summary {
+    font-size: 0.85rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news-tile .tag-list {
+    padding: 0 0.75rem 0.75rem;
 }
