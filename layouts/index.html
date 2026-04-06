@@ -18,7 +18,7 @@
                 <a href="{{ .RelPermalink }}" class="read-more">Read more &rarr;</a>
                 <div class="tag-list">
                     {{ range .Params.tags }}
-                    <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+                    <a href="{{ "/tags/" | relURL }}#{{ . | urlize }}" class="tag" aria-label="Jump to {{ . }} tag section">#{{ . }}</a>
                     {{ end }}
                 </div>
             </div>

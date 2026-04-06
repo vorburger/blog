@@ -61,14 +61,27 @@ nav a {
 }
 
 .tag {
-    background: #f0f0f0;
-    padding: 0.2rem 0.5rem;
-    border-radius: 3px;
-    font-size: 0.8rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
     text-decoration: none;
-    color: #666;
+    color: white;
+    display: inline-block;
+    transition: opacity 0.2s, transform 0.15s;
 }
 
+.tag:hover,
+.tag:focus-visible {
+    opacity: 0.85;
+    transform: scale(1.06);
+}
+
+.tag:focus-visible {
+    outline: 2px solid #333;
+    outline-offset: 2px;
+}
 .post-image {
     max-width: 100%;
     height: auto;
