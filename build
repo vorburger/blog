@@ -1,7 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 
 # Build script for Michael Vorburger.ch Blog
+
+rm -rf site/
 
 HUGO_ARGS="--enableGitInfo --gc --minify"
 
