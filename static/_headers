@@ -1,0 +1,13 @@
+# HTML documents: check the server before serving to guarantee instant updates
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Fingerprinted/immutable assets (CSS, JS, images with hash in filename): cache aggressively
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
