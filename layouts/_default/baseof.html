@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <link rel="stylesheet" href="/css/style.css">
     {{ if not hugo.IsServer }}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3Y6RG14L6"></script>
@@ -21,14 +21,14 @@
 </head>
 <body{{ if .IsHome }} class="home"{{ end }}>
     <header>
-        <h1><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
+        <h1><a href="{{ "/" }}">{{ .Site.Title }}</a></h1>
         <nav>
             <ul>
-                <li><a href="{{ "/" | relURL }}">Home</a></li>
-                <li><a href="{{ "/feed/" | relURL }}">Feed</a></li>
-                <li><a href="{{ "/posts/" | relURL }}">Posts</a></li>
-                <li><a href="{{ "/tags/" | relURL }}">Tags</a></li>
-                <li><a href="{{ "/index.xml" | relURL }}">RSS</a></li>
+                <li><a href="{{ "/" }}">Home</a></li>
+                <li><a href="{{ "/feed/" }}">Feed</a></li>
+                <li><a href="{{ "/posts/" }}">Posts</a></li>
+                <li><a href="{{ "/tags/" }}">Tags</a></li>
+                <li><a href="{{ "/index.xml" }}">RSS</a></li>
                 <li><a href="https://github.com/vorburger/blog">GitHub</a></li>
                 <li><a href="https://www.vorburger.ch" aria-label="Homepage"><span aria-hidden="true">🏡</span> Homepage <span aria-hidden="true">⤴️</span></a></li>
             </ul>
